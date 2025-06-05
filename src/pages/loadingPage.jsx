@@ -8,7 +8,7 @@ const LoadingPage = () => {
 
   useEffect(() => {
     setTimeout(() => {
-      fetch('https://jsonplaceholder.typicode.com/posts/1') // Dummy API
+      fetch('https://jsonplaceholder.typicode.com/posts') // Dummy API
         .then((res) => res.json())
         .then((result) => {
           setData(result);
